@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font links -->
+
+    <!-- Plugin Files -->
+    <link rel="stylesheet" href="vendor/WOW-master/css/libs/animate.css">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>JQuery template</title>
+
+  </head>
+  <body>
+<!-- <span class="counter">1,234,567.00</span>
+            <span>$</span><span class="counter">1.99</span>
+            <span class="counter">12345</span> 
+     -->
+    <header class="wow tada">
+      <h1>Hello World!</h1>
+    </header>
+
+    <section class="a1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="wow slideInRight">Lorem ipsum dolor, sit amet.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="counters">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="counter-js border shadow wow backInDown">
+              <h4>Our Clients</h4>
+              <h2 class="counter">1,234,567</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="counter-js border shadow">
+              <h4>Number of visitors</h4>
+              <h2 class="counter">56780.50</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="counter-js border shadow">
+              <h4>Number of employee</h4>
+              <h2 class="counter">1234567</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wowjs wow slideInLeft" data-wow-duration="1s" data-wow-delay="3s"></section>
+
+    <section class="slide-jq">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-10">
+            <div id="slideshow-banner">
+              <ul>
+                <li class="slideshow-item">
+                  <img src="images/1.jpg" alt="" width="600" height="500">
+                </li>
+                <li class="slideshow-item">
+                  <img src="images/6.jpg" alt="" width="600" height="500">
+                </li>
+                <li class="slideshow-item">
+                  <img src="images/big-1.jpg" alt="" width="600" height="500">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- JS links -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Counter-up Plugin Start -->
+    <script src="vendor/counter-up-master/waypoints.min.js"></script>
+    <script src="vendor/counter-up-master/jquery.counterup.min.js"></script>
+    <!-- Counter-up Plugin End -->
+    <!-- JQuery Slide Start -->
+    <script src="vendor/Basic-jQuery-Slideshow-With-Image-Zooming-Effect-slide-js/src/jquery.slide.js"></script>
+    <!-- JQuery Slide End -->
+    <!-- WOW JS Start -->
+    <script src="vendor/WOW-master/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- WOW JS End -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // JQ template Start
+      $(document).ready(function() {
+        $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+        });
+        $('#slideshow-banner').slide();
+        $('#slideshow-banner').slide({
+          cdTime : 5000// in ms
+        });
+        $('#slideshow-banner').slide({
+          controllerLeftButton :"images/left.png",
+          controllerRightButton :"images/right.png"
+        });
+      });
+      // JQ template End
+    </script>
+    
+  </body>
+</html>
